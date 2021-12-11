@@ -49,8 +49,5 @@ if not all([isinstance(f, str) for f in PYDENTICON_FOREGROUND]):
 if not isinstance(PYDENTICON_BACKGROUND, str):
     raise ImproperlyConfigured("Setting PYDENTICON_BACKGROUND must be a string representation of colour")
 
-if not isinstance(PYDENTICON_DIGEST, collections.Callable):
-    raise ImproperlyConfigured("Setting PYDENTICON_DIGEST must be a callable digest (usually from hashlib module).")
-
 if not isinstance(PYDENTICON_INVERT, bool):
     raise ImproperlyConfigured("Setting PYDENTICON_INVERT must be a boolean.")
